@@ -1,0 +1,27 @@
+{
+  "name": "popov/cita",
+  "description": "Cita SMS API",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "sms",
+    "cyta",
+    "api"
+  ],
+  "authors": [
+    {
+      "name": "Serhii Popov",
+      "email": "popow.sergiy@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Popov\\Cyta\\": "src/"
+    }
+  }
+}
