@@ -50,10 +50,6 @@ class Client
         }
         $xml = $this->create($to, $message, $language ?: $this->language)->asXML();
 
-
-        //$url = "https://www.cyta.com.cy/cytamobilevodafone/dev/websmsapi/sendsms.aspx";
-        //$xml = file_get_contents("body.xml");
-
         $headers = [
             'POST HTTP/1.1',
             'Content-type: application/xml; charset="utf-8"',
@@ -92,8 +88,6 @@ class Client
         $root->addChild('message', $message);
         $root->addChild('language', $language);
 
-        //Header('Content-type: text/xml');
-        //$apiXml->asXML();
         return $root;
     }
 
